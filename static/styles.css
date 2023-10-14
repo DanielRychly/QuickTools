@@ -60,3 +60,9 @@ footer {
 p {
   text-align: justify;
 }
+
+span a {
+  text-decoration: none;
+  color: white; /* White text color */
+  background-color: #333; /* Dark gray background for the default state */
+}
