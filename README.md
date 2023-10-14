@@ -8,6 +8,7 @@
 3. will output table of suggested but editable filenames (inputs in a table)
 4. will rename all pdf files accordingly and output to zip
 5. far future: ML model to identify headings
+6. Tools as a dropdown in navbar
 
 ## Annotation Extractor
 
