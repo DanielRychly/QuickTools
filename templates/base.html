@@ -4,7 +4,18 @@
 <head>
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
-    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');</style>
+    <!--<style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');</style>-->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if session['theme'] == 'dark' %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='dark.css') }}">
+    {% else %}
+        <link rel="stylesheet" href="{{ url_for('static', filename='light.css') }}">
+    {% endif %}
+
+
+
 </head>
 
 <body>
@@ -12,9 +23,16 @@
 
         <!-- Add your common header content here -->
 
+        <form method="POST" style="position: fixed; right: 10px; top: 10px;">
+            <button type="submit">Toggle Theme</button>
+        </form>
+
         <div>
 
-            <h1>QuickTools</h1>
+            <span><img width="40%" height="40%" src="{{ url_for('static', filename='quicktools-logo.png') }}" alt=""></span>
+        
+
+            <!--<h1>QuickTools</h1>-->
             
             <nav>
                 <ul>
