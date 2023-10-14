@@ -1,0 +1,62 @@
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0; /* Light gray background */
+  color: #333; /* Dark gray text color */
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333; /* Dark gray background */
+  color: white; /* White text color */
+  padding: 20px 30px;
+  text-align: center;
+}
+
+/* Navbar Styles */
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  margin-left: 0px;
+}
+
+/* Link Styles */
+nav a {
+  text-decoration: none;
+  color: white; /* White text color */
+  background-color: #333; /* Dark gray background for the default state */
+  padding: 10px 20px;
+  border-radius: 0px;
+  transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+/* Change link color on hover */
+nav a:hover {
+  background-color: #555; /* Slightly darker gray on hover */
+}
+
+main {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white; /* White content background */
+  border: 1px solid #ddd; /* Light gray border */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+footer {
+  background-color: #333; /* Dark gray background */
+  color: white; /* White text color */
+  padding: 10px 0;
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+}

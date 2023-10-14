@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Process PDF files{% endblock %}
+
+{% block content %}
+
+<h1>Processed PDF files</h1>
+
+<h1>Parsed Text</h1>
+<div class="parsed-text">
+    {{ parsed_text|safe }} <!-- Use the |safe filter to render HTML tags -->
+</div>
+
+
+{% endblock %}

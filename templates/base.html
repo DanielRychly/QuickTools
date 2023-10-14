@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');</style>
+</head>
+
+<body>
+    <header>
+
+        <!-- Add your common header content here -->
+
+        <div>
+
+            <h1>QuickTools</h1>
+            
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/name_extractor">Name Extractor</a></li>
+                    <li><a href="/annotation_extractor">Annotations Extractor</a></li>
+
+                    <!-- Add other common navigation links here -->
+                    <!--<li><a href="/check_site">Check site</a></li>-->
+                    <!-- <li><a href="/login">Login</a></li> -->
+                    <!--<li class="login_info">
+                        {% if session['username'] %}
+        
+                        <div id="info1">
+                            <p>Logged in as '{{session['username']}}'</p>
+                        </div>
+        
+                         <div id="info2">
+                            <a href="logout" id="logout_btn">Logout</a>
+                        </div>
+                        
+            
+                        {% else %}
+                            <div  class="login_info">
+                                <p>Not logged in</p>
+                            </div>
+            
+                        {% endif %}
+        
+                    </li>-->
+
+                </ul>
+            </nav>
+
+        </div>  
+        
+    </header>
+
+    <main class="container">
+        <!-- This is the main content block that child templates will override -->
+        {% block content %}{% endblock %}
+    </main>
+
+    <br>
+
+    <footer>
+        <!-- Add your common footer content here -->
+        <p>&copy; {{ current_year }} QuickTools - OpenSource</p>
+    </footer>
+
+    <!-- Add your common JavaScript here -->
+
+</body>
+</html>

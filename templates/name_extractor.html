@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Name Extractor{% endblock %}
+
+{% block content %}
+
+<h1>Name Extractor</h1>
+<p>Upload PDF Files:</p>
+<form action="/process_pdfs" method="post" enctype="multipart/form-data">
+    <!-- Allow users to upload multiple PDF files -->
+    <!-- <input type="file" name="pdf_files[]" accept=".pdf" multiple> -->
+    <input type="file" name="pdf_file" accept=".pdf">
+    <input type="submit" value="Upload">
+</form>
+
+{% endblock %}
