@@ -19,6 +19,10 @@ def name_extractor():
 def about():
     return render_template('about.html', current_year=current_year)
 
+@app.route('/contact')
+def contact():
+    return render_template('contact.html', current_year=current_year)
+
 @app.route('/annotation_extractor')
 def annotation_extractor():
     return render_template('annotation_extractor.html', current_year=current_year)
