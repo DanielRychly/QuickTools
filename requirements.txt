@@ -1,2 +1,2 @@
 Flask==2.3.2
-PyMuPDF2==3.0.1
+PyMuPDF==1.22.5
