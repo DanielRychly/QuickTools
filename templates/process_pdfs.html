@@ -6,10 +6,17 @@
 
 <h1>Processed PDF files</h1>
 
-<h1>Parsed Text</h1>
-<div class="parsed-text">
-    {{ parsed_text|safe }} <!-- Use the |safe filter to render HTML tags -->
+<div class="output_page">
+    {{ output_page|safe }}
 </div>
 
+
+<!--
+<h1>Parsed Text</h1>
+
+<div class="parsed-text">
+    {{ parsed_text|safe }}
+</div>
+-->
 
 {% endblock %}

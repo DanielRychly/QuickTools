@@ -1,9 +1,17 @@
+
 {% extends 'base.html' %}
 
 {% block title %}Annotation Extractor Page{% endblock %}
 
 {% block content %}
 
-    <h1>Annotation Extractor Page</h1>
+<h1>Annotation Extractor Page</h1>
+<p>Upload PDF File with highlighted text:</p>
+<form action="/output_highlights" method="post" enctype="multipart/form-data">
+    <!-- Allow users to upload multiple PDF files -->
+    <!-- <input type="file" name="pdf_files[]" accept=".pdf" multiple> -->
+    <input type="file" name="pdf_file" accept=".pdf">
+    <input type="submit" value="Upload">
+</form>
 
 {% endblock %}
